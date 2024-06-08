@@ -1,90 +1,7 @@
-/* Стили для глобальных элементов */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    min-width: 320px;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-}
-
-/* Стили для шапки сайта */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-.header__menu {
-    display: flex;
-    gap: 20px;
-}
-
-.header__links-list {
-    display: flex;
-    gap: 20px;
-}
-
-.header__link {
-    text-decoration: none;
-    color: #333;
-}
-
-.header__logo {
-    text-align: center;
-}
-
-.header__address {
-    text-align: right;
-}
-
-/* Стили для секции обложки */
-.cover {
-    position: relative;
-    background: url('../images/cover.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
 .cover__title {
     position: relative;
     z-index: 2;
-    font-size: 48px;
+    font-size: 72px;
     letter-spacing: 10px;
 }
 
@@ -92,44 +9,50 @@ button {
     position: relative;
     z-index: 2;
     margin-top: 20px;
+    font-size: 24px;
 }
 
 .bet-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     background: transparent;
     border: 2px solid #fff;
     padding: 10px 20px;
     color: #fff;
-    margin-top: 20px;
+    font-size: 16px;
     cursor: pointer;
-    }
-    
+}
+
 /* Стили для секции "Лоты" */
 .lots {
     padding: 50px 20px;
     background-color: #f0f0f0;
-}
-    
-.lots__heading {
     text-align: center;
+    margin-top: 50px;
+}
+
+.lots__heading {
+    font-size: 36px;
     margin-bottom: 20px;
 }
-    
+
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-    
+
 .lots__card-list-item {
-    flex: 1 1 200px;
+    flex: 1 1 300px;
 }
-    
+
 .card-link {
     display: block;
     height: 100%;
 }
-    
+
 .card {
     position: relative;
     width: 100%;
@@ -144,63 +67,80 @@ button {
     border-radius: 8px;
     overflow: hidden;
 }
-    
+
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
     background-size: cover;
 }
-    
+
 .card_type_book {
     background-image: url('../images/card-lot-02.jpg');
     background-size: cover;
 }
-    
+
 .card_type_picture {
     background-image: url('../images/card-lot-03.jpg');
     background-size: cover;
 }
-    
-.card__title, .card__text {
+
+.card__title {
     position: relative;
     z-index: 2;
     color: #fff;
+    font-size: 24px;
+    text-decoration: underline;
 }
-    
+
+.card__text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 16px;
+}
+
 .lots__look-more-link {
     display: block;
     text-align: center;
     margin-top: 20px;
     color: #000;
     text-decoration: underline;
+    font-size: 16px;
 }
-    
+
 .about-logo {
-    text-align: center;
-    margin: 50px 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    
+
 .about-logo img {
-    max-width: 200px;
+    width: 100px;
 }
-    
+
 /* Стили для секции "ОБ АУКЦИОНЕ" */
 .about {
     padding: 50px 20px;
     text-align: center;
 }
-    
+
 .about__heading {
     font-size: 36px;
     margin-bottom: 20px;
 }
-    
+
 .about__text {
     font-size: 16px;
     line-height: 1.5;
     max-width: 800px;
     margin: 0 auto 20px;
 }
-    
+
 /* Стили для футера */
 .footer {
     display: flex;
@@ -210,28 +150,28 @@ button {
     background-color: #f8f8f8;
     text-align: center;
 }
-    
+
 .footer__address {
     flex: 1;
     text-align: left;
 }
-    
+
 .footer__menu {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-    
+
 .footer__links-list {
     display: flex;
     gap: 20px;
 }
-    
+
 .footer__link {
     text-decoration: none;
     color: #333;
 }
-    
+
 .footer__socials {
     flex: 1;
     display: flex;
