@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  </head>
-  <body></body>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Оно тебе надо - аукцион вещей, в которые никто не верил</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Шапка -->
+        <div class="header__menu">
+            <ul class="header_links-list">
+                <li class="header_links-list-item"><a href="#" class="header_link header_link_active">Главная</a></li>
+                <li class="header_links-list-item"><a href="#" class="header_link">О нас</a></li>
+                <li class="header_links-list-item"><a href="#" class="header_link">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="header_logo">
+            <a href="#" class="header_logo-image"><img src="images/logo.png" alt="Логотип"></a>
+        </div>
+        <address class="header_address">
+            <a href="tel:+70000000">+7 (000) 000-00-00</a>
+            <br>
+            <a href="mailto:mail@example.com">mail@example.com</a>
+        </address>
+    </header>
+    <main>
+        <section class="cover">
+            <div class="overlay"></div>
+            <h1 class="cover_title">
+                <span class="aligned-text">Оно</span>
+                <span class="aligned-text">тебе</span>
+                <span class="aligned-text no-letter-spacing">надо</span>
+            </h1>
+            <div class="cover_description">
+                <p class="cover_description-text">Подзаголовок с нестандартным расстоянием между словами</p>
+                <button class="bet-button">Сделать ставку</button>
+            </div>
+        </section>
+        <section class="lots">
+            <h2 class="lots_heading">Секция с карточками</h2>
+            <ul class="lots_card-list">
+                <li class="lots_card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_film">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">Фильм</h3>
+                            <p class="card_text">Описание фильма</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="lots_card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_book">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">Книга</h3>
+                            <p class="card_text">Описание книги</p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="lots_look-more-link">Посмотреть больше</a>
+        </section>
+    </main>
+    <footer>
+        <!-- Подвал -->
+    </footer>
+</body>
 </html>
