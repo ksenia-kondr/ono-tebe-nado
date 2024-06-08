@@ -1,1 +1,110 @@
 /* место для вашего кода */
+/* Основные стили для секций */
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__menu {
+    grid-column: 1 / 2;
+}
+
+.header_links-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header_link {
+    text-decoration: none;
+}
+
+.header_logo {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.header_address {
+    grid-column: 3 / 4;
+    text-align: right;
+}
+
+.cover {
+    position: relative;
+    background: url('../images/cover.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cover_title {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 10px;
+}
+
+.cover_description {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.lots {
+    padding: 50px 20px;
+}
+
+.lots_card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_type_film {
+    background-image: url('../images/film.jpg');
+}
+
+.card_type_book {
+    background-image: url('../images/book.jpg');
+}
+
+.card_title {
+    z-index: 2;
+    font-size: 24px;
+}
+
+.card_text {
+    z-index: 2;
+}
+
+.bet-button {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
