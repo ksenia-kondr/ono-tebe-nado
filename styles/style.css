@@ -62,7 +62,8 @@ button {
 }
 
 .header__logo img {
-    width: 92px;
+    width: 60px;
+    height: auto;
 }
 
 .header__address {
@@ -271,5 +272,10 @@ button {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.footer__socials {
+    width: 24px;
+    height: auto;
 }
 
